@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setgram Restaurant</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="header-title">Setgram Restaurant</h1>
+        <p class="header-subtitle">Absolute Finger-Licking Burger and Pizza</p>
+      </header>
+      <main>
+        <div id="menu">
+          <!-- content here -->
+        </div>
+        <div class="thanks-message" id="thanks-message">
+          <!-- Thank you note here -->
+        </div>
+        <div class="order-section hidden" id="order-section">
+          <h3 class="order-title">Your Order</h3>
+
+          <div class="order-items-container" id="order-items-container">
+            <!-- Order here -->
+          </div>
+
+          <div class="order-total-container" id="order-total-container">
+            <!-- Total price here -->
+          </div>
+
+          <button
+            type="button"
+            class="complete-order-btn"
+            id="complete-order-btn"
+          >
+            Complete Your Order
+          </button>
+        </div>
+        <div class="modal hidden" id="modal">
+          <h1 class="modal-title">Enter card details</h1>
+          <form class="payment-form" id="payment-form">
+            <label for="card-name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="card-name"
+              class="input-payment-form"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="card-number">Card Number:</label>
+            <input
+              type="number"
+              name="cardNumber"
+              id="card-number"
+              class="input-payment-form"
+              placeholder="Enter card number"
+              required
+            />
+            <label for="cvv">CVV:</label>
+            <input
+              type="number"
+              name="cardNumber"
+              id="cvv"
+              class="input-payment-form"
+              placeholder="CVV"
+              required
+            />
+            <button type="submit" class="pay-btn" id="pay-btn">Pay</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

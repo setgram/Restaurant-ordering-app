@@ -1,0 +1,32 @@
+export const menuArray = [
+  {
+    name: "Pizza",
+    foodPic: "./images/pizza.png",
+    ingredients: ["crust", "sauce", "toppings"],
+    price: 3500,
+    emoji: "🍕",
+    id: 0,
+    quantity: 0,
+    total: 0,
+  },
+  {
+    name: "Burger",
+    foodPic: "./images/burger.png",
+    ingredients: ["lettuce", "bacon", "mayonnaise"],
+    price: 2000,
+    emoji: "🍔",
+    id: 1,
+    quantity: 0,
+    total: 0,
+  },
+  {
+    name: "Beer",
+    foodPic: "./images/beer.png",
+    ingredients: ["grain, hops, yeast, water"],
+    price: 1000,
+    emoji: "🍺",
+    id: 2,
+    quantity: 0,
+    total: 0,
+  },
+];
